@@ -1,0 +1,75 @@
+.
+.mainList{
+  background: #fff;
+  border: 1px solid #E6E9ED;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+.require input{
+    height: 28px;
+    font-size: 12px;
+    color: #73879C;
+    border: 1px solid #E6E9ED;
+    outline: none;
+    padding-left: 10px;
+    width: 158px;
+    line-height: 28px;
+    box-shadow: inset 0 0.5px 1px rgba(0,0,0,.075);
+    float: left;
+}
+.require span{
+	color: #fff;
+    background-color: #337ab7;
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	margin-left: 10px;
+}
+.require span a{
+	color: #fff;
+	text-decoration: none;
+}
+.quitCon ,.remove{
+    width:350px;
+    height: 200px;
+    background: #fff;
+    position: fixed;
+    left:50%;
+    top:50%;
+    z-index:99;
+    margin-left: -175px;
+    margin-top: -100px;
+    display: none;
+}
+.quitCon p ,.remove p{
+    text-align: center;
+    font-size: 16px;
+    color: #56585b;
+    padding-top: 60px;
+}
+.btns{
+    width:197px;
+    margin:65px auto 0 auto;
+    overflow: hidden;
+
+}
+.btns span{
+    width: 88px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin-right: 20px;
+    background: #26B99A;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
+.btns .off{
+    margin-right: 0;
+}

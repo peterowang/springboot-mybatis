@@ -1,0 +1,543 @@
+/* 添加车辆弹框 */
+.peoplecar{
+	width:350px;
+	height:280px;
+	background: #fff;
+	z-index: 100;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -175px;
+    margin-top: -125px;
+    display: none;
+}
+.peoList{
+	margin-top: 20px;		
+}
+.peoList li{
+	clear: both;
+    line-height: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.peoList li span {
+    color: #73879C;
+    display: block;
+    float: left;
+    width: 90px;
+    text-align: right;
+}
+.peoList li span em {
+    color: #ff5a00;
+    padding-right: 5px;
+}
+.peoList li input {
+    height: 28px;
+    font-size: 12px;
+    color: #555;
+    border: 1px solid #E6E9ED;
+    outline: none;
+    padding-left: 10px;
+    width: 170px;
+    line-height: 28px;
+    box-shadow: inset 0 0.5px 1px rgba(0,0,0,.075);
+    float: left;
+}
+.save{
+	background: #26B99A;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    width: 88px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+/*添加设备弹框*/
+.equipmentAlet{
+	position: fixed;
+	top:50%;
+	left:50%;
+	z-index: 102;
+	background: #fff;
+	width: 360px;
+	height:350px;
+	margin-left: -180px;
+	margin-top: -175px;
+	display: none;
+}
+.addtitle{
+	font-size: 16px;
+	color:#73879C;
+	text-align: center;
+	line-height: 51px;
+}
+.addlist{
+	margin-top: 6px;
+}
+.addlist li{
+	height: 30px;
+	line-height: 30px;
+	margin-bottom: 15px;
+	clear: both;
+}
+.addlist span{
+	display: block;
+	float: left;
+	width: 105px;
+	text-align: right;
+}
+.addlist select{
+	float: left;
+	outline: none;
+    width: 170px;
+    height: 30px;
+    border: 1px solid #E6E9ED;
+    color: #73879C;
+}
+.addlist input{
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	border: 1px solid #E6E9ED;
+	color: #73879C;
+	width: 76px;
+    padding-left: 5px;
+}
+.addlist em{
+	float: left;
+	font-size: 14px;
+	color: #73879C;
+	padding-left: 8px;
+}
+.addbtn{
+	width: 180px;
+	margin: 20px auto 0 auto;
+    overflow: hidden;
+}
+.addbtn span{
+	width: 80px;
+	height: 28px;
+	background: #ff5a00;
+	color:#fff;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 28px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.addbtn .affirm{
+	margin-right:0;
+}
+.center{
+	margin-top: 10px;
+}
+.cenTab{
+	font-size: 16px;
+	border:1px solid #E6E9ED;
+	overflow: hidden;
+	background: #fff;
+	border-bottom: none;
+	padding:20px 0 0 20px;
+	width: 97%;
+}
+.cenTab li{
+	width:80px;
+	text-align: center;
+	margin-right: 35px;
+	height: 40px;
+	line-height: 35px;
+	cursor: pointer;
+	float: left;
+}
+.bg{
+	border-bottom: 2px solid #73879C;
+	line-height: 31px;
+}
+.equipment{
+	font-size: 14px;
+	position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.conRight li{
+	float: left;
+	margin-right: 15px;
+}
+.conRight span{
+   float: left;
+   display: block;
+}
+.conRight li .require{
+    font-size: 12px;
+    color: #fff;
+    background: #337ab7;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    padding: 0 15px;
+}
+.conRight select {
+	float: left;
+    outline: none;
+    width: 115px;
+    height: 30px;
+    border: 1px solid #E6E9ED;
+    color: #73879C;
+}
+.conRight input{
+	float: left;
+	outline: none;
+	width: 105px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    border: 1px solid #E6E9ED;
+    color: #73879C;
+}
+.divs{
+	margin-top: 15px;
+	overflow: hidden;
+}
+.conLeft{
+    background: #286090;
+    border-color: #204d74;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 10px 12px;
+    float: left;
+}
+.conRight{
+	float: left;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 20px;
+}
+.pageSize{
+	display: -webkit-box;
+	position: absolute;
+	right:80px;
+	bottom: 25px;
+	font-size: 14px;
+}
+.pageSize button{
+	width:25px;
+	height:25px;
+	margin-left: 10px;
+	background: none;
+	border:1px solid #E6E9ED;
+}	
+.sel{
+	width:50px;
+	height:25px;
+}
+.ol{
+	display: -webkit-box;
+}
+.inp{
+	width:30px;
+	height: 20px;
+	padding-left: 10px;
+}
+.ol li{
+	width:25px;
+	height:25px;
+	border:1px solid #E6E9ED;
+	border-radius: 5px;
+	line-height: 25px;
+	text-align: center;
+	margin-left: 10px;
+}
+/*设备详情*/
+.device{
+	width: 350px;
+	height: 400px;
+	position: fixed;
+	top: 50%;
+	left:50%;
+	background: #fff;
+	z-index: 102;
+	margin-left: -175px;
+	margin-top: -200px;
+	display: none;
+}
+.peoList2{
+	margin-top: 0;
+}
+.peoList2 li{
+	margin-bottom: 9px;
+}
+/* 企业详情修改 */
+.modify{
+	position: absolute;
+    right: 100px;
+    top: 38%;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    background: #286090;
+    border-radius: 5px;
+    text-align: center;
+}
+.modify a{
+	font-size: 14px;
+    display: block;
+    line-height: 30px;
+    font-weight: bolder;
+    color: #fff;
+    text-decoration: none;
+}
+/* 企业详情应用名称 */
+.applydl{
+	overflow: hidden;
+	padding-top: 15px;
+}
+.applydl dt{
+	width:90px;
+	height:90px;
+	float: left;
+	margin-right: 10px;
+}
+.applydl dt img{
+	width: 100%;
+	height:100%;
+}
+.applydl dd{
+	float: left;
+	padding-top: 10px;
+}
+.applydl dd h3{
+	font-size: 16px;
+	color:#73879C;
+	line-height: 35px;
+}
+.applydl dd p{
+	font-size: 14px;
+	color:#2A3F54;
+	line-height: 25px;
+}
+.applydl dd p a{
+	text-decoration: none;
+}
+.applyName ,.main{
+	padding: 10px 15px;
+	background: #fff;
+	width:96.1%;
+	border:1px solid #E6E9ED;
+}
+/* 人员架构 */
+.administrators{
+	font-size: 16px;
+	color:#73879C;
+	line-height: 30px;
+	margin-top: 10px;
+	position: relative;
+	width: 100%;
+}
+.addbox{
+	font-size: 12px;
+    color: #fff;
+    background: #337ab7;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 54px;
+    height: 30px;
+    line-height: 30px;
+}
+.structure>div{
+	padding: 10px 15px;
+	background: #fff;
+	width:96.1%;
+	border:1px solid #E6E9ED;
+}
+.center>div{
+	display: none;
+}
+/* 弹出框 */
+.boxmain{
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	z-index: 200;
+	display: none;
+}
+.xiangqing{
+	background: #fff;
+	width:260px;
+	height:400px;
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-top: -230px;
+	margin-left: -150px;
+	font-size: 14px;
+	border-radius: 10px;
+	padding:20px 50px;
+	display: none;
+}
+.xiangqing h3{
+	font-size: 25px;
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+.xiangqing p span{
+	width:80px;
+	line-height: 30px;
+	display: inline-block;
+	text-align: right;
+	margin-right: 20px;
+}
+.xiangqing p em{
+	font-size: 12px;
+}
+.determine{
+	width:100%;
+	height:35px;
+	line-height: 35px;
+	display: block;
+	font-size: 16px;
+    color: #fff;
+    background: #337ab7;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.state a{
+	margin-left: 10px;
+	font-size: 12px;
+	display: inline-block;
+    color: #fff;
+    background: #337ab7;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding:5px 10px;
+}
+.addman{
+	padding: 10px 15px;
+    background: #337ab7;
+    color: #fff;
+    display: block;
+    float: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+addman1{
+	margin-left: 12px;
+}
+
+/*应用授权*/
+.applydl2{
+	position: relative;
+}
+.applydl2 dd{
+	width: 230px;
+}
+.applydl2 dd span{
+	position: absolute;
+    right: 62px;
+    top: 44.5px;
+    font-size: 16px;
+    color: #95dee7;
+    cursor: pointer;
+}
+.indexList{
+	margin-bottom: 20px;
+}
+.indexList2{
+	margin-top: 20px;
+}
+.indexList li .pic1{
+ /* margin-left: 20px;*/
+}
+.indexList li .pic2{
+  position: absolute;
+  left: 186px;
+  z-index: 99;
+}
+.indexList li .pic2s{
+  left: 191px;
+}
+.indexList li .pic3{
+  position: absolute;
+  left: 341px;
+  z-index: 98;
+}
+.indexList li .pic4{
+  position: absolute;
+  left: 496px;
+}
+.next{
+	overflow: hidden;
+	width: 315px;
+	margin:20px auto;
+}
+.next span{
+    background: #26B99A;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    display: block;
+    float: left;
+    text-align: center;
+    color: #fff;
+    padding: 0px 25px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+/*耳标管理——添加库存*/
+.repertory{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 102;
+    background: #fff;
+    width: 360px;
+    height: 280px;
+    margin-left: -180px;
+    margin-top: -140px;
+    display: none;
+}
+.addlist2 input{
+	width: 55%;
+}
+.addlist2 .txt{
+	width: 76px;
+}
+/*PDA管理*/
+.repertory2{
+	height: 200px;
+	margin-top: -100px;
+}
+.yingy{
+	clear: both;
+	width: 232px;
+    margin: 0 auto;
+}
+.yingy p a{
+	text-decoration: none;
+    display: block;
+    float: left;
+}
+.addlist p{
+	float: left;
+}
+.addlist .check{
+	width: 13px;
+}

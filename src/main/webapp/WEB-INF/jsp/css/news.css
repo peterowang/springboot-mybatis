@@ -1,0 +1,32 @@
+.newlist{
+	font-size: 16px;
+    border-bottom: 1px solid #E6E9ED;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 20px;
+}
+.newlist li{
+	width: 80px;
+	text-align: center;
+	margin-right: 35px;
+	height: 40px;
+	line-height: 35px;
+	cursor: pointer;
+	float: left;
+}
+.newlist .bg{
+	border-bottom: 2px solid #73879C;
+    line-height: 35px;
+}
+.none{
+	display: none;
+}
+.indexList li var{
+	font-style: normal;
+	padding: 7px 20px;
+	background: #26B99A;
+	color: #fff;
+	margin-left: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}

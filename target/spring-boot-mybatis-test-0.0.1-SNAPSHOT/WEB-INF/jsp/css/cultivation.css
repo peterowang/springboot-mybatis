@@ -1,0 +1,104 @@
+.divs {
+    margin-top: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.conLeft {
+    background: #286090;
+    border-color: #204d74;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 10px 12px;
+    float: left;
+}
+.conRight {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 20px;
+}
+.conRight li {
+    float: left;
+    margin-right: 15px;
+}
+.conRight li p{
+	float: left;
+	color: #73879C;
+}
+.conRight span {
+    float: left;
+    display: block;
+}
+.conRight select {
+    float: left;
+    outline: none;
+    width: 115px;
+    height: 30px;
+    border: 1px solid #E6E9ED;
+    color: #73879C;
+}
+.conRight input {
+    float: left;
+    outline: none;
+    width: 105px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    border: 1px solid #E6E9ED;
+    color: #73879C;
+}
+.conRight li .require {
+    font-size: 12px;
+    color: #fff;
+    background: #337ab7;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    padding: 0 15px;
+}
+.conRight li em{
+	font-style: normal;
+	display: block;
+	float: left;
+	padding: 0 5px;
+}
+.conRight2{
+    height:auto;
+}
+.conRight2 li{
+    margin-bottom: 15px;
+}
+/*查看*/
+.looks{
+    width:350px;
+    height: 260px;
+    background: #fff;
+    position: fixed;
+    left:50%;
+    top:50%;
+    z-index:102;
+    margin-left: -175px;
+    margin-top: -130px;
+    display: none;
+}
+.looks p img{
+    width:300px;
+    height: 160px;
+    margin:20px auto;
+    display: block;
+}
+.lookSave{
+    background: #337ab7;
+    width: 230px;
+    height: 35px;
+    display: block;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    margin:0 auto;
+}

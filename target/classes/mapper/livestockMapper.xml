@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.LivestockMapper">
+    <resultMap id="BaseResultMap" type="com.example.demo.domain.LivestockModel" >
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="equipment_id" property="equipmentId" jdbcType="BIGINT" />
+        <result column="number" property="number" jdbcType="VARCHAR" />
+        <result column="enterprise_id" property="enterpriseId" jdbcType="BIGINT" />
+    </resultMap>
+    <sql id="baseColumns">
+        id,equipment_id,number,enterprise_id
+    </sql>
+    <select id="info" resultMap="BaseResultMap">
+        select
+        l.id,l.equipment_id,l.number,l.enterprise_id,e.enterprise_name
+        from livestock l
+        left join
+        enterprise e
+        on l.enterprise_id = e.id
+        limit #{pageNo},#{pageSize}
+    </select>
+    <select id="count" resultType="java.lang.Integer">
+        select
+        count(1)
+        from livestock l
+        left join
+        enterprise e
+        on l.enterprise_id = e.id
+    </select>
+</mapper>

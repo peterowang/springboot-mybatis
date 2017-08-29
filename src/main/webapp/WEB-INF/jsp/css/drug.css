@@ -1,0 +1,291 @@
+*{
+    box-sizing:border-box;
+}
+.divs {
+    margin-top: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.conLeft {
+    background: #286090;
+    border-color: #204d74;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 10px 12px;
+    float: left;
+}
+.conRight {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 20px;
+}
+.conRight li {
+    float: left;
+    margin-right: 15px;
+}
+.conRight span {
+    float: left;
+    display: block;
+}
+.conRight select {
+    float: left;
+    outline: none;
+    width: 115px;
+    height: 30px;
+    border: 1px solid #E6E9ED;
+    color: #73879C;
+}
+.conRight input {
+    float: left;
+    outline: none;
+    width: 105px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    border: 1px solid #E6E9ED;
+    color: #73879C;
+}
+.conRight li .require {
+    font-size: 12px;
+    color: #fff;
+    background: #337ab7;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    padding: 0 15px;
+}
+.conRight li em{
+    font-style: normal;
+    display: block;
+    float: left;
+    padding: 0 5px;
+}
+.modify{
+    right: 50px;
+    top: 35px;
+    color: #337ab7;
+    font-size: 14px;
+    cursor: pointer;
+}
+.mengban{
+    display: none;
+}
+/* 弹框 */
+.Bombox{
+   display: none;
+   text-align: center;
+   width: 360px;
+   /*height:200px;*/
+   background: #fff;
+   z-index: 120;
+   position: fixed;
+   left:50%;
+   top:50%;
+   margin-left: -180px;
+   margin-top: -100px;
+   padding:25px 0;
+}
+.Bombox p{
+    margin-top: 20px;
+}
+.Bombox p span{
+    width:70px;
+    text-align: right;
+    display: inline-block;
+}
+.Bombox p input,select{
+    height: 28px;
+    font-size: 12px;
+    color: #555;
+    border: 1px solid #E6E9ED;
+    outline: none;
+    padding-left: 10px;
+    width: 200px;
+    line-height: 28px;
+    box-shadow: inset 0 0.5px 1px rgba(0,0,0,.075);
+}
+.baocun em{
+    background: #337ab7;
+    width:230px;
+    height:35px;
+    display: inline-block;
+    line-height: 35px;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.protectbao em{
+    background: #666;
+    width:230px;
+    height:35px;
+    display: inline-block;
+    line-height: 35px;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* 饲料数据弹框 */
+.feedbox{
+   display: none;
+   width: 360px;
+   height:400px;
+   background: #fff;
+   z-index: 120;
+   position: fixed;
+   left:50%;
+   top:50%;
+   margin-left: -180px;
+   margin-top: -200px;
+   padding: 40px 30px;
+   text-align: center;
+}
+.feedbox li{
+    clear: both;
+}
+.feedbox li span{
+    width: 80px;
+    display: inline-block;
+    margin-top:20px;
+}
+.feedbox li input,select{
+    width: 200px;
+    height: 28px;
+    font-size: 12px;
+    color: #555;
+    border: 1px solid #E6E9ED;
+    outline: none;
+    padding-left: 10px;
+    line-height: 28px;
+    box-shadow: inset 0 0.5px 1px rgba(0,0,0,.075);
+}
+.licence{
+    float: left;
+}
+.feedbox .upload{
+  float: left;
+  position: relative;   
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.feedbox .file{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 110px;
+  padding-left: 0;
+  opacity: 0;
+  filter:alpha(opacity=50);
+  cursor:pointer;
+}
+.feedbox img{
+    border: 1px solid #D9DEE4;
+}
+.feedbox li .save{
+    background: #337ab7;
+    width: 230px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+.feedbox li .protect{
+    background: #666;
+    width: 230px;
+    height: 35px;
+    display: inline-block;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+/* 诊疗数据弹框 */
+.result{
+   display: none;
+   text-align: center;
+   width: 360px;
+   /*height:200px;*/
+   background: #fff;
+   z-index: 120;
+   position: fixed;
+   left:50%;
+   top:50%;
+   margin-left: -180px;
+   margin-top: -100px;
+   padding-top:30px;
+}
+.result p{
+    margin-top: 30px;
+}
+.result p span{
+    width:70px;
+    text-align: right;
+    display: inline-block;
+}
+.result p input{
+    height: 28px;
+    font-size: 12px;
+    color: #555;
+    border: 1px solid #E6E9ED;
+    outline: none;
+    padding-left: 10px;
+    width: 200px;
+    line-height: 28px;
+    box-shadow: inset 0 0.5px 1px rgba(0,0,0,.075);
+}
+.result .baocun em{
+    background: #337ab7;
+    width:230px;
+    height:35px;
+    display: inline-block;
+    line-height: 35px;
+    color:#fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* 追溯标签信息弹框 */
+.trace{
+   display: none;
+   width: 360px;
+   /*height:420px;*/
+   background: #fff;
+   z-index: 120;
+   position: fixed;
+   left:50%;
+   top:50%;
+   margin-left: -180px;
+   margin-top: -210px;
+   padding: 20px 30px;
+   text-align: center;
+}
+.trace ul li span{
+    width: 80px;
+    display: inline-block;
+    margin-top:20px;
+    text-align: right;
+}
+.trace ul li input{
+    width: 200px;
+    height: 28px;
+    font-size: 12px;
+    color: #555;
+    border: 1px solid #E6E9ED;
+    outline: none;
+    padding-left: 10px;
+    line-height: 28px;
+    margin-left: 10px;
+    box-shadow: inset 0 0.5px 1px rgba(0,0,0,.075);
+}
+.deposit{
+  margin-top: 20px;
+}

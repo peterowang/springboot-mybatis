@@ -1,0 +1,98 @@
+.kus {
+	margin-top: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.conLeft {
+    background: #337ab7;
+    border-color: #204d74;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 1px 12px;
+    float: left;
+}
+.conhed {
+	    height: 32px;
+    line-height: 32px;
+    margin-left: 20px;
+}
+.conhed li {
+	    float: left;
+    margin-right: 15px;
+}
+.conhed li input {
+    outline: none;
+    width: 105px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    border: 1px solid #E6E9ED;
+    color: #73879C;
+}
+.conhed li em {
+    font-size: 12px;
+    color: #fff;
+    background: #337ab7;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    padding: 0 15px;
+}
+.repes {
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 102;
+    background: #fff;
+    width: 360px;
+    height: 250px;
+    margin-left: -180px;
+    margin-top: -125px;
+    display: none;
+}
+.addtitle {
+	    font-size: 16px;
+    color: #73879C;
+    text-align: center;
+    line-height: 51px;
+}
+.repes ul li {
+	height: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    clear: both;
+}
+.repes ul li span {
+	display: block;
+    float: left;
+    width: 105px;
+    text-align: right;
+}
+.repes ul li input {
+	display: block;
+	width: 55%;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #E6E9ED;
+    color: #73879C;
+    padding-left: 5px;
+}
+.revise {
+	margin:0 5px;
+}
+.addbtn{
+    width:180px;
+
+}
+.addbtn .save{
+    margin-right: 0;
+}
+#select1{
+    outline: none;
+    width: 115px;
+    height: 30px;
+    border: 1px solid #E6E9ED;
+    color: #73879C;
+}

@@ -1,0 +1,60 @@
+.namelist{
+	width: 150px;
+	height:35px;
+    background: #337ab7;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+}
+.divcenter a{
+    color:#fff;
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin
+}
+.next {
+    overflow: hidden;
+    width: 315px;
+    margin: 20px auto;
+}
+.next span {
+    background: #26B99A;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    display: block;
+    float: left;
+    text-align: center;
+    color: #fff;
+    padding: 0px 25px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.tables{
+	margin-top: 20px;
+}
+.ps{
+	line-height: 20px;
+}
+.indexList{
+    margin-bottom: 20px;
+}
+.indexList li .pic1{
+ /* margin-left: 20px;*/
+}
+.indexList li .pic2{
+  position: absolute;
+  left: 186px;
+}
+.indexList li .pic3{
+  position: absolute;
+  left: 339px;
+  z-index: 98;
+}
+.indexList li .pic4{
+  position: absolute;
+  left: 494px;
+}

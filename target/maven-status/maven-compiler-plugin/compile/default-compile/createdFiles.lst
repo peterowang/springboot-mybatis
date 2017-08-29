@@ -1,0 +1,8 @@
+com\example\demo\controller\HomeController.class
+com\example\demo\config\FastJsonDefineConfig.class
+com\example\demo\ApplicationController.class
+com\example\demo\mybatis\MyBatisMapperScannerConfig.class
+com\example\demo\mybatis\MyBatisConfig.class
+com\example\demo\mapper\LivestockMapper.class
+com\example\demo\domain\LivestockModel.class
+com\example\demo\mybatis\ApiBaseMapper.class
