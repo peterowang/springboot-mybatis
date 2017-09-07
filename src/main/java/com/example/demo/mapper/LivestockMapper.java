@@ -12,6 +12,18 @@ import java.util.List;
  */
 @Repository
 public interface LivestockMapper extends ApiBaseMapper<LivestockModel>{
+     /**
+      * 分面查询
+      * @param pageNo
+      * @param pageSize
+      * @return
+      */
      List<LivestockModel> info(@Param("pageNo") Integer pageNo,@Param("pageSize") Integer pageSize);
      Integer count();
+     /**
+      * 条件查询
+      */
+     List<LivestockModel> findFilter(@Param("enterpriseId") Long enterpriseId,@Param("number")String number,
+                                     @Param("state")String state,@Param("beginTime")String beginTime,
+                                     @Param("endTime")String endTime);
 }

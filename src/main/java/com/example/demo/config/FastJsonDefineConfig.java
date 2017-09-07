@@ -1,5 +1,6 @@
 package com.example.demo.config;
 
+import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
@@ -23,6 +24,7 @@ public class FastJsonDefineConfig extends WebMvcConfigurerAdapter {
                 SerializerFeature.DisableCircularReferenceDetect,
                 SerializerFeature.WriteMapNullValue,
                 SerializerFeature.WriteNullStringAsEmpty,
+                SerializerFeature.WriteDateUseDateFormat,
                 //线上环境请取消,仅是格式化输出json设置，会输出太多无用空格
                 SerializerFeature.PrettyFormat
         );

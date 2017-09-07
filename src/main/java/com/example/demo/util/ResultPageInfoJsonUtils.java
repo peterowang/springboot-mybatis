@@ -9,24 +9,24 @@ import java.util.List;
  */
 public class ResultPageInfoJsonUtils
 {
-    public static String getSuccessJson(String code, int pageNo, int pageSize, int totalCount, List lst)
+    public static ResultPageInfo getSuccessJson(String code, int pageNo, int pageSize, int totalCount, List lst)
     {
         ResultPageInfo ret = new ResultPageInfo("000000", "success");
         ret.setPageInfo(pageNo, pageSize, totalCount, lst);
-        return JSONObject.toJSONString(ret);
+        return ret;
     }
 
-    public static String getSuccessJson(String code, List lst)
+    public static ResultPageInfo getSuccessJson(String code, List lst)
     {
         ResultPageInfo ret = new ResultPageInfo("000000", "success");
         ret.setPageInfo(0, 0, 0, lst);
-        return JSONObject.toJSONString(ret);
+        return ret;
     }
 
-    public static String getFailedJson(String code, Object value)
+    public static ResultObj getFailedJson(String code, Object value)
     {
         ResultObj ret = new ResultObj(code, "failed", value);
-        return JSONObject.toJSONString(ret);
+        return ret;
     }
 
 }

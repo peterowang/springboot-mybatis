@@ -6,17 +6,41 @@
         <result column="equipment_id" property="equipmentId" jdbcType="BIGINT" />
         <result column="number" property="number" jdbcType="VARCHAR" />
         <result column="enterprise_id" property="enterpriseId" jdbcType="BIGINT" />
+        <result column="livestock_master_id" property="livestockMasterId" jdbcType="BIGINT" />
+        <result column="type" property="type" jdbcType="VARCHAR"/>
+        <result column="state" property="state" jdbcType="VARCHAR"/>
+        <result column="initial_weight" property="initialWeight" jdbcType="VARCHAR"/>
+        <result column="initial_time" property="initialTime" jdbcType="TIMESTAMP"/>
+        <result column="lairage_weight" property="lairageWeight" jdbcType="VARCHAR"/>
+        <result column="lairage_time" property="lairageTime" jdbcType="TIMESTAMP"/>
+        <result column="birthplace" property="birthplace" jdbcType="VARCHAR"/>
+        <result column="varieties_id" property="varietiesId" jdbcType="BIGINT"/>
+        <result column="sex" property="sex" jdbcType="VARCHAR"/>
+        <result column="is_pregnancy" property="isPregnancy" jdbcType="VARCHAR"/>
+        <result column="picture" property="picture" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+        <result column="parent_id" property="parentID" jdbcType="BIGINT"/>
     </resultMap>
     <sql id="baseColumns">
-        id,equipment_id,number,enterprise_id
+        id,equipment_id,number,enterprise_id,livestock_master_id,type,state,initial_weight,
+        initial_time,lairage_weight,lairage_time,birthplace,varieties_id,sex,is_pregnancy,
+        picture,create_time,update_time,parent_id
     </sql>
+
+    <!--分页查询 -->
     <select id="info" resultMap="BaseResultMap">
         select
-        l.id,l.equipment_id,l.number,l.enterprise_id,e.enterprise_name
+        l.id,l.equipment_id,l.number,l.enterprise_id,l.livestock_master_id,l.type,l.state,l.initial_weight,l.
+initial_time,l.lairage_weight,l.lairage_time,l.birthplace,l.varieties_id,l.sex,l.is_pregnancy,l.
+picture,l.create_time,l.update_time,l.parent_id,e.enterprise_name,v.type as varieties_type
         from livestock l
         left join
         enterprise e
         on l.enterprise_id = e.id
+        left join varieties v
+        on l.varieties_id = v.id
+        order by l.update_time
         limit #{pageNo},#{pageSize}
     </select>
     <select id="count" resultType="java.lang.Integer">
@@ -26,5 +50,53 @@
         left join
         enterprise e
         on l.enterprise_id = e.id
+    </select>
+
+    <!--动态条件查询-->
+    <select id="findFilter" resultMap="BaseResultMap" >
+        select
+        l.id,l.equipment_id,l.number,l.enterprise_id,l.livestock_master_id,l.type,l.state,l.initial_weight,l.
+initial_time,l.lairage_weight,l.lairage_time,l.birthplace,l.varieties_id,l.sex,l.is_pregnancy,l.
+picture,l.create_time,l.update_time,l.parent_id,e.enterprise_name,v.type as varieties_type
+        from livestock l
+        left join enterprise e
+        on l.enterprise_id = e.id
+        left join varieties v
+        on l.varieties_id = v.id
+ <!--    where 1=1
+        <if test="enterpriseId!=null">
+          and l.enterprise_id = #{enterpriseId}
+        </if>
+        <if test="number!=null and number!=''">
+          and l.number = #{number}
+        </if>
+        <if test="state!=null and state!=''">
+          and l.state = #{state}
+        </if>
+        <if test="beginTime!=null">
+          and l.initial_time &gt; #{beginTime}
+        </if>
+        <if test="endTime!=null">
+          and l.initial_time &lt; #{endTime}
+        </if>-->
+
+        <trim prefix="where " suffix="" suffixOverrides="and">
+            <if test="enterpriseId!=null">
+                 l.enterprise_id = #{enterpriseId} and
+            </if>
+            <if test="number!=null and number!=''">
+                 l.number = #{number} and
+            </if>
+            <if test="state!=null and state!=''">
+                 l.state = #{state} and
+            </if>
+            <if test="beginTime!=null">
+                 l.initial_time &gt; #{beginTime} and
+            </if>
+            <if test="endTime!=null">
+                 l.initial_time &lt; #{endTime} and
+            </if>
+        </trim>
+        order by l.update_time desc
     </select>
 </mapper>
